@@ -124,6 +124,23 @@ const EditHackathon = () => {
             className="w-1/6 p-2 border rounded max-md:w-full"
           />
         </div>
+        {formData.image && (
+          <div>
+            <img
+              src={formData.image}
+              alt="uploaded image"
+              height={300}
+              width={300}
+              className="object-cover"
+            />
+            <button
+              onClick={() => setFormData({ ...formData, image: "" })}
+              className="text-green-600 px-4 py-1 rounded-lg max-md:my-4 max-md:w-full"
+            >
+              Change Image
+            </button>
+          </div>
+        )}
 
         <div className="mb-10">
           <label htmlFor="level" className="block text-gray-700 mb-4">

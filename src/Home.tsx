@@ -20,13 +20,13 @@ const Home = () => {
               place to put you AI / Data Science skills to test on diverse
               datasets allowing you to faster learnig through competitions.
             </p>
-            <Link
-              to="/create-hackathon"
-              className="text-lg bg-white text-[#333] rounded-lg px-4 py-3 font-bold"
-            >
-              Create Challenge
-            </Link>
           </div>
+          <Link
+            to="/create-hackathon"
+            className="text-lg bg-white text-[#333] rounded-lg px-4 py-3 font-bold ml-10 max-md:m-0 text-center w-1/3 max-md:w-full"
+          >
+            Create Challenge
+          </Link>
         </div>
         <img src={Rocket} alt="" />
       </div>
@@ -38,7 +38,7 @@ const Home = () => {
             <p>AI model submissions</p>
           </div>
         </div>
-        <div className="flex items-center gap-4 border-l border-r border-white px-20">
+        <div className="flex items-center gap-4 border-l border-r border-white px-20 max-md:border-none">
           <img src={logo2} alt="" />
           <div>
             <h1 className="text-2xl font-bold">50k+</h1>
