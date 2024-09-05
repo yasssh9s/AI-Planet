@@ -40,7 +40,7 @@ const EditHackathon = () => {
     );
     setHackathons(updatedHackathons);
 
-    navigate(`/`);
+    navigate(`/AI-Planet/`);
   };
 
   return (

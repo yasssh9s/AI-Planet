@@ -16,7 +16,7 @@ const HackathonDetails = () => {
   const handleDelete = () => {
     const updatedHackathons = hackathons.filter((h) => h.id !== hackathon.id);
     setHackathons(updatedHackathons);
-    navigate("/");
+    navigate("/AI-Planet/`");
   };
 
   const handleEdit = () => {

@@ -61,7 +61,7 @@ const CreateHackathon = () => {
       image: "",
       level: "easy",
     });
-    navigate(`/`);
+    navigate(`/AI-Planet/`);
   };
 
   const determineStatus = (
