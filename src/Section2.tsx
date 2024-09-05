@@ -1,4 +1,3 @@
-import React from "react";
 import book from "./assets/icons/carbon_notebook-reference.svg";
 import community from "./assets/icons/Vector.svg";
 import robot from "./assets/icons/Robot.svg";

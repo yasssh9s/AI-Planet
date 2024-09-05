@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useHackathons } from "./utils/HackathonContext";
 import levelIcon from "./assets/icons/carbon_skill-level-basic.svg";

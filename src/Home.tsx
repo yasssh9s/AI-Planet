@@ -1,4 +1,3 @@
-import React from "react";
 import Rocket from "./assets/icons/PicsArt_04-14-04.42 1.svg";
 import logo1 from "./assets/icons/Group 1000002515.svg";
 import logo2 from "./assets/icons/Group 1000002516.svg";

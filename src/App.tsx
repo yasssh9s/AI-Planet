@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Navbar from "./Navbar";
@@ -11,7 +10,7 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/AI-Planet/" element={<Home />} />
         <Route path="/create-hackathon" element={<CreateHackathon />} />
         <Route path="/hackathon/:id" element={<HackathonDetails />} />
         <Route path="/edit-hackathon/:id" element={<EditHackathon />} />
