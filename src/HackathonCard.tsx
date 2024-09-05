@@ -52,9 +52,8 @@ const HackathonCard: React.FC<HackathonCardProps> = ({
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      setTimer(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+      setTimer(`${days} : ${hours} :  ${minutes}`);
     };
 
     updateTimer();
@@ -70,7 +69,7 @@ const HackathonCard: React.FC<HackathonCardProps> = ({
   };
 
   return (
-    <div className="border rounded-lg shadow-lg bg-white flex flex-col items-center justify-center gap-4 h-full w-80">
+    <div className="border rounded-lg shadow-lg bg-white flex flex-col items-center justify-center gap-4 h-full w-80 max-md:w-full">
       {image && (
         <img
           src={image}
@@ -96,19 +95,21 @@ const HackathonCard: React.FC<HackathonCardProps> = ({
       )}
       <h3 className="text-xl font-bold">{name}</h3>
       {status === "active" && (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center">
           <p>Ends in</p>
           <h4 className="font-bold text-xl">{timer}</h4>
+          <p className="text-xs">{`Days : Hours : Minutes`}</p>
         </div>
       )}
       {status === "upcoming" && (
-        <div>
+        <div className="flex flex-col items-center">
           <p>Starts in</p>
-          <h4 className="font-bold text-xl">{timer}</h4>
+          <h4 className="font-bold text-3xl">{timer}</h4>
+          <p className="text-xs">{`Days : Hours : Minutes`}</p>
         </div>
       )}
       {status === "past" && (
-        <div>
+        <div className="flex flex-col items-center">
           <p>Ended on</p>
           <h4 className="font-bold text-xl">
             {new Date(endDate).toLocaleDateString()}

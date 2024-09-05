@@ -48,12 +48,12 @@ const HackathonList = () => {
     );
 
   return (
-    <div className="bg-[#002A3B] p-20 flex flex-col gap-10 w-full h-full">
+    <div className="bg-[#002A3B] p-20 flex flex-col gap-10 w-full h-full max-md:p-10">
       <h1 className="text-white text-3xl font-semibold text-center">
         Explore Challenges
       </h1>
-      <div className="flex items-center justify-center gap-10">
-        <div className="flex items-center bg-white w-3/5 py-2 px-5 gap-4 rounded-lg">
+      <div className="flex items-center justify-center gap-10 max-md:flex-col">
+        <div className="flex items-center bg-white w-3/5 py-2 px-5 gap-4 rounded-lg max-md:w-full">
           <img src={SearchIcon} alt="search" />
           <input
             type="text"

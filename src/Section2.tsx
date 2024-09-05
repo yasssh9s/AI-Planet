@@ -40,12 +40,12 @@ const data: cardData[] = [
 
 const Section2 = () => {
   return (
-    <div className="p-20">
+    <div className="p-20 max-md:p-5">
       <h1 className="text-4xl font-bold text-center mb-20">
         Why Participate in{" "}
         <span className="text-[#0FA958]">AI Challenges?</span>
       </h1>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 max-md:grid-cols-1">
         {data.map((item, index) => (
           <Card
             key={index}

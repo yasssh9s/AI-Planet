@@ -84,7 +84,7 @@ const CreateHackathon = () => {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="rounded-lg shadow-lg px-20 py-10"
+        className="rounded-lg shadow-lg px-20 py-10 max-md:px-10"
       >
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 mb-4">
@@ -96,7 +96,7 @@ const CreateHackathon = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-1/2 p-2 border rounded"
+            className="w-1/2 p-2 border rounded max-md:w-full"
             required
           />
         </div>
@@ -111,7 +111,7 @@ const CreateHackathon = () => {
             name="startDate"
             value={formData.startDate}
             onChange={handleChange}
-            className="w-1/2 p-2 border rounded"
+            className="w-1/2 p-2 border rounded max-md:w-full"
             required
           />
         </div>
@@ -126,7 +126,7 @@ const CreateHackathon = () => {
             name="endDate"
             value={formData.endDate}
             onChange={handleChange}
-            className="w-1/2 p-2 border rounded"
+            className="w-1/2 p-2 border rounded max-md:w-full"
             required
           />
         </div>
@@ -140,7 +140,7 @@ const CreateHackathon = () => {
             name="description"
             value={formData.description}
             onChange={handleChange}
-            className="w-1/2 p-2 border rounded"
+            className="w-1/2 p-2 border rounded max-md:w-full"
             required
           />
         </div>
@@ -155,7 +155,7 @@ const CreateHackathon = () => {
             name="image"
             value={formData.image}
             onChange={handleChange}
-            className="w-1/6 p-2 border rounded"
+            className="w-1/6 p-2 border rounded max-md:w-full"
           />
         </div>
 
@@ -168,7 +168,7 @@ const CreateHackathon = () => {
             name="level"
             value={formData.level}
             onChange={handleChange}
-            className="w-1/6 p-2 border rounded"
+            className="w-1/6 p-2 border rounded max-md:w-full"
           >
             <option value="easy">Easy</option>
             <option value="medium">Medium</option>
@@ -178,7 +178,7 @@ const CreateHackathon = () => {
 
         <button
           type="submit"
-          className="px-5 py-2 bg-[#44924C] text-white rounded-lg text-xl"
+          className="px-5 py-2 bg-[#44924C] text-white rounded-lg text-xl max-md:w-full"
         >
           Create Challenge
         </button>
